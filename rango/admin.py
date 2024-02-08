@@ -8,7 +8,7 @@ class CategoryAdmin(admin.ModelAdmin):
 admin.site.register(Category, CategoryAdmin)
 
 class Admin_Page(admin.ModelAdmin):
-    list_display = ( 'title', 'category', 'url')
+    list_display = ( 'title', 'category', 'url', 'views')
 
 admin.site.register(Page, Admin_Page)
 # Register your models here.
