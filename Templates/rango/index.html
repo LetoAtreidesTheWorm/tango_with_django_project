@@ -1,15 +1,20 @@
+<!DOCTYPE html>
+
+
 {% extends 'rango/base.html' %}
+{% load static %}
 
-{% load staticfiles %}
-
-{% block title_block %}
-    Homepage
+{% block title_block%}
+        <title>Rango</title>
 {% endblock %}
 
 {% block body_block %}
-         <h1>Rango says...</h1>
-             hey there partner! <br />
-            <strong>{{ boldmessage }}</strong><br />
+    {% if user.is_authenticated %}
+        howdy {{ user.username }}!
+    {% else %}
+            hey there partner!
+    {% endif %}
+            
 
         {% if categories %}
         <ul>

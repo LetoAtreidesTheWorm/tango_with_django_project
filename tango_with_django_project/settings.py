@@ -17,6 +17,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 #os.environ.setdefault('DJANGO_SETTING_MODULE', 'tango_with_django_project.settings')
 
+LOGIN_URL = 'rango:login'
+
 
 STATIC_DIR = os.path.join(BASE_DIR, 'static/')
 
