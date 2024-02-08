@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+{{MEDIA_URL}}
+{{STATIC_URL}}
+
+<html>
+
+    <head>
+        <title>ABOUT</title>
+    </head>
+
+    <body>
+         <h1>Rango says...</h1>
+        <div>
+             hey there partner! <br />
+            <strong>{{ boldmessage }}</strong><br />
+    </div>
+    <div>
+        <a href="/rango/home/">Home</a><br />
+        <img src = "{{ MEDIA_URL }}B9.jpg"/> 
+    </div>
+    </body>
+
+</html>
