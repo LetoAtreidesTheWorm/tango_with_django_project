@@ -43,9 +43,9 @@ def add_page(request, category_name_slug):
 
     except Category.DoesNotExist:
         category = None
-
+# You cannot add a page to a Category that does not exist...
     if category is None:
-        return redirect('/rango/')
+        return redirect('/rango/home/')
     
     form = PageForm()
 
